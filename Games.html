@@ -1,0 +1,63 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ManWorx</title>
+        <script src="https://unpkg.com/lucide@latest"></script>
+        <!--<link rel="stylesheet" href="https://pro.fontawsome.com/releases/v5.10.0/css/all.css" />-->
+        <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="stylesheet" href="edu.css">
+        
+
+        <link rel="stylesheet" href="edu.css">
+    </head>
+
+    <body>
+<!--selection switches(blog,home...)-->
+<section id="header">
+    <link rel="stylesheet" href="style.css">
+    <a href="#"><img src="img/edu.png" class="logo" alt="" /></a>
+
+    <div>
+        <ul id="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Stats.html">Stats</a></li>
+            <li><a class="active" href="Games.html">Games</a></li>
+            <li><a href="Modules.html">Modules</a></li>
+            <li><a href="Quiz.html">Quiz</a></li>
+            <li id="lg-bag"><a href="cart.html"><i class="fas fa-user"></i></a></li>
+            <a href="#" id="close"><i class="fas fa-times"></i></a>
+        </ul>
+    </div>
+    <div id="mobile">
+        <a href="cart.html"><i class="fas fa-user"></i></a>
+        <i id="bar" class="fas fa-outdent"></i>
+    </div>
+</section>
+
+<div class="min-h-screen">
+    <div class="container">
+        <h1>Fun Learning Adventure!</h1>
+        <div id="subjects-container" class="grid">
+            <!-- Subject cards will be inserted here -->
+        </div>
+        <div id="games-container" class="hidden">
+            <button id="back-button" class="back-button">← Back to Subjects</button>
+            <div class="grid games-grid">
+                <!-- Game cards will be inserted here -->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <script src="script.js"></script>
+        <script src="edu.js"></script>
+    </body>
+
+</html>

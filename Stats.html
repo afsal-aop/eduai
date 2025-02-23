@@ -1,0 +1,90 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stats Dashboard</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="stats.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+    <body>
+<!--selection switches(blog,home...)-->
+<section id="header">
+    <link rel="stylesheet" href="style.css">
+    <a href="#"><img src="img/edu.png" class="logo" alt="" /></a>
+
+    <div>
+        <ul id="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="Stats.html">Stats</a></li>
+            <li><a href="Games.html">Games</a></li>
+            <li><a href="Modules.html">Modules</a></li>
+            <li><a href="Quiz.html">Quiz</a></li>
+            <li id="lg-bag"><a href="cart.html"><i class="fas fa-user"></i></a></li>
+            <a href="#" id="close"><i class="fas fa-times"></i></a>
+        </ul>
+    </div>
+    <div id="mobile">
+        <a href="cart.html"><i class="fas fa-user"></i></a>
+        <i id="bar" class="fas fa-outdent"></i>
+    </div>
+</section>
+
+
+<section id="fullpage">
+<section id="product1" class="section-p1">
+    <h2>Featured Statistics</h2>
+    <p>Engagement & Activity Stats 🚀</p>
+    <div class="pro-container">
+      <div class="pro">
+        <h4>Total XP Earned</h4>
+        <canvas id="chart1"></canvas>
+      </div>
+      <div class="pro">
+        <h4>Courses Completed</h4>
+        <canvas id="chart2"></canvas>
+      </div>
+      <div class="pro">
+        <h4>Current Streak</h4>
+        <canvas id="chart3"></canvas>
+      </div>
+      <div class="pro">
+        <h4>Quiz Scores</h4>
+        <canvas id="chart4"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social & Competitive Stats -->
+  <section id="product1" class="section-p1">
+    <h2>Social & Competitive Stats 🌍</h2>
+    <p>Track your competitive edge and rankings</p>
+    <div class="pro-container">
+      <div class="pro">
+        <h4>Leaderboard Rank</h4>
+        <canvas id="chart5"></canvas>
+      </div>
+      <div class="pro">
+        <h4>Followers & Following</h4>
+        <canvas id="chart6"></canvas>
+      </div>
+      <div class="pro">
+        <h4>Friend Streaks</h4>
+        <canvas id="chart7"></canvas>
+      </div>
+      <div class="pro">
+        <h4>Top 3 Finishes</h4>
+        <canvas id="chart8"></canvas>
+      </div>
+    </div>
+  </section>
+</section>
+  <script src="script.js"></script>
+  <script src="stats.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    min-height: 100vh;
+    background-image: url("img/banner/b1.jpeg");
+    color: white;
+}
+
+.skyline-root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.nebula-box {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+    background: linear-gradient(to right, #9c27b0, #ffffff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 10px rgba(156, 39, 176, 0.3);
+}
+
+.galaxy-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+    .galaxy-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .galaxy-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.galactic-tile {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+}
+
+.galactic-tile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.stellar-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-orbit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.icon-orbit i {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.star-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.orbit-description {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.eclipse-hidden {
+    display: none;
+}
+
+#quantum-portal {
+    text-align: center;
+}
+
+.meteor-return {
+    display: inline-flex;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: opacity 0.2s;
+}
+
+.meteor-return:hover {
+    opacity: 0.8;
+}
+
+.supernova-deck {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+    .supernova-deck {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .supernova-deck {
+        grid-template-columns: 1fr;
+    }
+}
+
+.nebula-lesson {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    transition: transform 0.2s;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+    text-align: center;
+}
+
+.nebula-lesson:hover {
+    transform: translateY(-5px);
+}
+
+.hyperdrive-start {
+    margin-top: 1rem;
+    width: 100%;
+    background: #9c27b0;
+    color: white;
+    font-weight: bold;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.hyperdrive-start:hover {
+    background: #7b1fa2;
+}
+
+.completion-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: #4caf50;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    display: none;
+}
+
+.nova-complete .completion-badge {
+    display: block;
+}
+
+.nova-complete .hyperdrive-start {
+    background: #4caf50;
+}
+
+.nova-complete .hyperdrive-start:hover {
+    background: #388e3c;
+}
